@@ -1,119 +1,136 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
 }
 
 .container {
   width: 90%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: auto;
   padding: 40px 0;
 }
 
 header {
-  background: #fff;
-  border-bottom: 1px solid #eee;
+  background-color: #333;
   padding: 20px 0;
+  text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.8em;
-}
-
-nav {
-  margin-top: 10px;
+  font-size: 2.5em;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
 nav a {
-  margin-right: 15px;
+  color: #fff;
+  margin: 0 15px;
   text-decoration: none;
-  color: #8e44ad;
   font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .hero {
-  background: linear-gradient(135deg, #a27de7, #7f7fd5);
+  background-image: url('https://via.placeholder.com/1600x900/333333/FFFFFF?text=Violino');
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 .hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.hero .btn {
-  background: white;
-  color: #8e44ad;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.hero .btn:hover {
-  background: #f2f2f2;
-}
-
-section h2 {
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 20px;
 }
 
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #732d91;
+}
+
+.section {
+  padding: 60px 0;
+}
+
 .gray-bg {
-  background: #f0f0f0;
+  background-color: #222;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
-ul li {
-  margin-bottom: 10px;
+.aula-item {
+  display: inline-block;
+  width: 30%;
+  margin-right: 2%;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-blockquote {
-  font-style: italic;
-  margin: 20px 0;
-  border-left: 4px solid #8e44ad;
-  padding-left: 15px;
-  color: #555;
-}
-
-form input, form textarea {
-  display: block;
+.aula-item img {
   width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  background: #8e44ad;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #732d91;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 footer {
+  background-color: #333;
   text-align: center;
-  background: #fff;
   padding: 20px 0;
-  border-top: 1px solid #eee;
+}
+
+footer p {
   font-size: 0.9em;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  background-color: #8e44ad;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+form button:hover {
+  background-color: #732d91;
 }
